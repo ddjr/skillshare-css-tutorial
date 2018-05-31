@@ -1,3 +1,145 @@
-body {
-  background-color: yellow;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
 }
+h1 {
+  font-weight: 800;
+  font-size: 50px;
+}
+h2 {
+  font-weight: 800;
+  font-size: 50px;
+}
+h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+.hero-banner {
+  background-color: #007FFF;
+  min-height: 100vh;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.hero-banner h1 {
+  color: white;
+  margin: 14px 0 20px;
+}
+.hero-banner h3 {
+  color: white;
+  margin: 0 0 35px;
+}
+.hero-banner h4,
+.hero-banner h4 a {
+  color: white;
+  margin: 0;
+}
+
+.character1 {
+  width: 363px;
+  height: 344px;
+  position: absolute; top: 70px; right: 79px;
+  background: url('img/characters/circle-guy.png') no-repeat 0 0;
+  background-size: 100%;
+  transform: rotate(15deg);
+}
+.character2 {
+  width: 281px;
+  height: 406px;
+  position: absolute; top: 113px; right: 307px;
+  background: url('img/characters/sticky-guy-1.png') no-repeat 0 0;
+  background-size: 100%;
+}
+.character3 {
+  width: 300px;
+  height: 397px;
+  position: absolute; bottom: 74px; right: 109px;
+  background: url('img/characters/eish-guy.png') no-repeat 0 0;
+  background-size: 100%;
+}
+a.cta,
+button.cta {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: #007FFF;
+  display: inline-block;
+  /* outline: 10px solid rgba(0,127,255,.15); */
+  box-shadow: 0 0 0 5px rgba(0,127,255,.10);
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+a.cta.alt,
+button.cta.alt {
+  background-color: #FFD400;
+  color: #111111;
+  box-shadow: 2px 2px 0 5px rgba(0,0,0,.10);
+  /* outline-color: rgba(0,0,0,.15); */
+}
+nav {
+  height: 100px;
+  background-color: white;
+  box-shadow: 0 5px 8px rgba(0,0,0,.2);
+  position: sticky; top: 0;
+}
+nav .logo {
+  display: block;
+  font-size: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  position: absolute; top: 50%; left: 30px;
+  line-height: 0px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  padding-right: 20px;
+}
+nav ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: right;
+
+}
+nav ul li a {
+  font-size: 30px;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #111111;
+  line-height: 30px;
+  padding: 35px 20px;
+}
+
+.more-info {
+  text-align: center;
+}
+/* <div class='more-info' id="more-info">
+  <h2>Join Our Fan Club</h2>
+  <p>Every Week we have <span class'highlight'>a party.</span> If you want to join us then join our fan club.
+    Members will also receive pictures of us in all kinds of shapes and sizes. Cool huh?</p>
+  <button class="cta">Sign Me Up!</button>
+</div> */
